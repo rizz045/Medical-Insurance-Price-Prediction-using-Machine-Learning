@@ -5,7 +5,7 @@ import pickle
 import streamlit as st
 
 #Load the model
-with open("","rb") as file:
+with open("insurance_model.pkl","rb") as file:
     loaded_model = pickle.load(file)
 
 def predict_charges(input_data):
