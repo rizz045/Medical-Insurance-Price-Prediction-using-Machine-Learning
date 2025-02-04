@@ -26,10 +26,10 @@ def main():
     st.header("Enter the following details")
 
     #input values from the user
-    age = st.text_input("Enter the age of a person (18-62)")
-    bmi = st.text_input("BMI of a Person (15.96 - 53.13)")
-    children = st.text_input("Enter the number of children (0-5)")
-    smoker = st.text_input("0-NO or 1-YES")
+    age = st.text_input("Enter the age of a person (18-62)", value='25')
+    bmi = st.text_input("BMI of a Person (15.96 - 53.13)", value='27')
+    children = st.text_input("Enter the number of children (0-5)", value='0')
+    smoker = st.text_input("0-NO or 1-YES", value='1')
 
     answer = ""
 
