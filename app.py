@@ -15,7 +15,7 @@ def predict_charges(input_data):
         inp_data_reshape = inp_data_array.reshape(1, -1)
         pred_in = loaded_model.predict(inp_data_reshape)
         if pred_in == 0:
-            return "Something went wrong try to put the input again"
+            return "Something went wrong try to put different values in the input field."
         else:
             return pred_in
     except:
@@ -35,7 +35,7 @@ def main():
 
     if st.button("Predict Charges"):
         answer = predict_charges([age, bmi, children, smoker])
-        st.success(answer)
+        st.success(f"The charges would be around : ${answer[0]:.2f}")
 
 if __name__ == '__main__':
     main()
