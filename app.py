@@ -37,5 +37,5 @@ def main():
         answer = predict_charges([age, bmi, children, smoker])
         st.success(answer)
 
-if __name__ == '__mian__':
+if __name__ == '__main__':
     main()
